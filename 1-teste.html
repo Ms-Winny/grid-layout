@@ -24,13 +24,18 @@
             background: white;
             height: 600px;
             width: 600px;
-            padding: 35px;
-            border: 2px solid black;
-            border-radius: 10%;
+            padding: 20px;
+            border: 8px solid #042940;
+            border-radius: 35px;
 
             display: grid;
             grid-template-columns: repeat(5, 20%);
             grid-template-rows: repeat(4, 25%);
+        }
+
+        .item {
+            border-radius: 20px;
+            margin: 5px;
         }
 
         .item-1 {
@@ -48,10 +53,12 @@
 
         .item-4 {
             background: #DDCEF2;
+            grid-area: 1 / 5 / 3 / 6;
         }
 
         .item-5 {
             background: #F2E2DC;
+            grid-row: 2 / 4;
         }
 
         .item-6 {
@@ -60,10 +67,12 @@
 
         .item-7 {
             background: #F2A649;
+            grid-area: 2 / 3 /4 / 5;
         }
 
         .item-8 {
             background: #D0F2D9;
+            grid-area: 3 / 2 / 5 / 3;
         }
 
         .item-9 {
@@ -80,6 +89,7 @@
 
         .item-12 {
             background: #13678A;
+            grid-column: span 2;
         }
 
     </style>
